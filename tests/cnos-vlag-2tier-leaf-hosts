@@ -13,5 +13,5 @@
 # Please change <username> and <password> with appropriate value for your switch.
 
 [cnos-vlag-2tier-leaf]
-10.240.178.74   username=<username> password=<password> deviceType=g8272_cnos condition=leaf_switch1 
-10.240.178.75   username=<username> password=<password> deviceType=g8272_cnos condition=leaf_switch2
+10.240.178.74   ansible_network_os=cnos ansible_ssh_user=<username> ansible_ssh_pass=<password> deviceType=g8272_cnos condition=leaf_switch1 
+10.240.178.75   ansible_network_os=cnos ansible_ssh_user=<username> ansible_ssh_pass=<password> deviceType=g8272_cnos condition=leaf_switch2

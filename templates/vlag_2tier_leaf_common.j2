@@ -5,13 +5,13 @@ spanning-tree mode {{item.stp_mode1}}
 #
 #LACP configuration
 interface ethernet {{item.slot_chassis_number1}}
-aggregation-group {{item.portchannel_interface_number1}} mode {{item.portchannel_mode1}}
+channel-group {{item.portchannel_interface_number1}} mode {{item.portchannel_mode1}}
 exit
 #
 #VLAN configuration
-interface port-aggregation {{item.portchannel_interface_number1}}
-bridge-port mode {{item.switchport_mode1}}
+interface port-channel {{item.portchannel_interface_number1}}
+switchport mode {{item.switchport_mode1}}
 exit
 interface ethernet {{item.slot_chassis_number2}}
-bridge-port mode {{item.switchport_mode1}}
+switchport mode {{item.switchport_mode1}}
 exit

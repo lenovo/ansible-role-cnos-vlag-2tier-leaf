@@ -1,5 +1,5 @@
 ---
-cnos_vlag_2tier_leaf_data :
+cnos_vlag_2tier_leaf_data:
   - {}
 
 cnos_vlag_2tier_leaf_switch1_data:
